@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Ryuta Kawamoto <ryu073000@i.softbank.jp>
+
 import sys
 ans = 0
 for line in sys.stdin:
