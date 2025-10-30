@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 # SPDX-FileCopyrightText: 2025 Ryuta Kawamoto ryu073000@i.softbank.jp
 # SPDX-License-Identifier: BSD-3-Clause
 
