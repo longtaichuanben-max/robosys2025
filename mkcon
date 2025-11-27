@@ -2,10 +2,9 @@
 # SPDX-FileCopyrightText: 2025 Ryuta Kawamoto ryu073000@i.softbank.jp
 # SPDX-License-Identifier: BSD-3-Clause
 
-##標準入力より2つのリストを作成
 import sys
 
-
+##入力された文字列と数値をリストにする関数
 def read_food_data():
     foodname = []
     kc = []
@@ -24,8 +23,21 @@ def read_food_data():
 
     return foodname,kc
 
+##カロリーの合計の計算をする関数
+def total_calories(kc_list):
+    return sum(kc_list)
+
+##基準値を超えたら警告を出す関数
+def limit_calories(total,limit=2200.0):
+
+
+
+
 if __name__ == "__main__":
     names,calories = read_food_data()
+    
+    print("--食事記録--")
+    for n,c in zip(names,calories):
+        print(f"{n}:{c}")
 
-    print(names)
-    print(calories)
+
