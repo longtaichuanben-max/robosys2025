@@ -30,14 +30,26 @@ def total_calories(kc_list):
 ##基準値を超えたら警告を出す関数
 def limit_calories(total,limit=2200.0):
 
+    print("-"*30)
+    print(f"Totalcalories : {total:.1f}kcal")
+    print(f"limit         : {limit:.1f}kcal")
+    print("-"*30)
 
-
+    if total > limit:
+        over = total - limit
+        print("基準値を{over:.1f}kcal超過しています。")
+        print("食べ過ぎに注意しましょう！！")
+    else:
+        print("基準値以内です。")
 
 if __name__ == "__main__":
     names,calories = read_food_data()
-    
+    limit=2200.0
+
+    #食事記録を描画
     print("--食事記録--")
     for n,c in zip(names,calories):
-        print(f"{n}:{c}")
+        print(f"{n} : {c}kcal")
 
-
+    total = total_calories(calories)
+    limit_calories(total,limit)
