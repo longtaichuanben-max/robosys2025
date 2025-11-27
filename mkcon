@@ -37,7 +37,7 @@ def limit_calories(total,limit=2200.0):
 
     if total > limit:
         over = total - limit
-        print("基準値を{over:.1f}kcal超過しています。")
+        print(f"基準値を{over:.1f}kcal超過しています。")
         print("食べ過ぎに注意しましょう！！")
     else:
         print("基準値以内です。")
