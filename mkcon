@@ -5,20 +5,27 @@
 ##標準入力より2つのリストを作成
 import sys
 
-foodname = []
-kc = []
 
-for line in sys.stdin:
-    ##strip()で文字列の先頭と末尾の空白文字を削除
-    n = line.strip()
-    ##line.strip()の結果が[""]の場合を無視
-    if not n:
-        continue
-    ##split()で文字列をスペースやタブごとに分割する
-    name,cal = n.split()
-    ##foodname（文字列のリスト）とkc（浮動小数点のリスト）に分割した文字列を代入
-    foodname.append(name)
-    kc.append(float(cal))
+def read_food_data():
+    foodname = []
+    kc = []
 
-    print(foodname)
-    print(kc)
+    for line in sys.stdin:
+        ##strip()で文字列の先頭と末尾の空白文字を削除
+        n = line.strip()
+        ##line.strip()の結果が[""]の場合を無視
+        if not n:
+            continue
+        ##split()で文字列をスペースやタブごとに分割する
+        name,cal = n.split()
+        ##foodname（文字列のリスト）とkc（浮動小数点のリスト）に分割した文字列を代入
+        foodname.append(name)
+        kc.append(float(cal))
+
+    return foodname,kc
+
+if __name__ == "__main__":
+    names,calories = read_food_data()
+
+    print(names)
+    print(calories)
