@@ -4,11 +4,22 @@
 ![test](https://github.com/longtaichuanben-max/robosys2025/actions/workflows/test.yml/badge.svg)
 ## インストール方法
 以下のコマンドをターミナルで入力してください。
-
-
-## 食べ物リストの形式
-
+'''
+$git clone https://github.com/longtaichuanben-max/robosys2025.git
+'''
+'''
+$cd robosys2025
+'''
+## 食べ物リストの形式例
+"食べ物名 カロリーの数値"のように半角スペース空けて行ごとに情報を記入してください。
+例
+'''
+apple 80
+banana 84
+アジ 144 
+'''
 ## 実行例
+
 
 ## 必要なソフトウェア
 - Python
