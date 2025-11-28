@@ -46,7 +46,7 @@ $3080.0over!!
 - © 2025 Ryuta Kawamoto
 ## 参考文献
 - このパッケージは，[ryuichiueda/slides_marp/robosys2025]由来のコード（© 2025 Ryuichi Ueda）
-を利用しています。
+を一部利用しています。
 - このパッケージのディレクトリ構成やテスト方式は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て参考にしています。
     - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 
