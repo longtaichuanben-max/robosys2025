@@ -6,11 +6,15 @@
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
     - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 
-# plusコマンド
+# mkcon
 ![test](https://github.com/longtaichuanben-max/robosys2025/actions/workflows/test.yml/badge.svg)
+
 ## 必要なソフトウェア
 - Python
   -テスト済みバージョン: 3.7~3.14
+- Ubuntu 24.04 LTS
 ## テスト環境
 - Ubuntu 24.04 LTS
+## ライセンス
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - © 2025 Ryuta Kawamoto
