@@ -12,6 +12,10 @@ res=0
 out=$(echo "林檎 100" | ./mkcon)
 [ "${out}" = 100.0 ] || ng "$LINENO"
 
+out=$(echo apple 10000 | ./mkcon)
+[ "$?" = 0 ] || ng "$LINENO"
+[ "${out}" = 10000.0"over!!" ] || ng "$LINENO"
+
 ### ENPTY INPUT ###
 out=$(echo | ./mkcon)
 [ "$?" = 0 ] || ng "$LINENO"
@@ -24,10 +28,6 @@ out=$(echo a a 100 | ./mkcon)
 out=$(echo a a | ./mkcon)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
-
-out=$(echo apple 10000 | ./mkcon)
-[ "$?" = 0 ] || ng "$LINENO"
-[ "${out}" = 10000.0"over!!" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res
