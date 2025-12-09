@@ -29,12 +29,10 @@ def total_calories(kc_list):
 
 ##基準値を超えたら警告を出す関数
 def limit_calories(total,limit):
-    ##色の定義
-    RED = "\033[31m"
-    RESET = "\033[0m"
 
     if total > limit:
-        print(f"{RED}{total:.1f}{RESET}")
+        total=""
+        print(total)
     else:
         print(f"{total:.1f}")
 
