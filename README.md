@@ -5,8 +5,8 @@
 ## インストール方法
 以下のコマンドをターミナルで入力してください。
 ```
-$git clone https://github.com/longtaichuanben-max/robosys2025.git
-$cd robosys2025
+$ git clone https://github.com/longtaichuanben-max/robosys2025.git
+$ cd robosys2025
 ```
 ## 食べ物リストの形式例
 "食べ物名 カロリーの数値"のように半角スペース空けて行ごとに情報を記入してください。
@@ -28,7 +28,7 @@ $ cat test.txt | ./mkcon
 例：カロリーの合計値が日本人男性のカロリー摂取量である2650kcalを超えていた場合は以下のように
 出力されます。例として摂取カロリーの合計が3080kcalであった場合を挙げます。
 ```ansi
-<span style="color: red;">3080.0</span>
+[31m3080.0[0m
 ```
 ## 必要なソフトウェア
 - Python
