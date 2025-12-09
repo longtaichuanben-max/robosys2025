@@ -34,7 +34,6 @@ def limit_calories(total,limit):
     RESET = "\033[0m"
 
     if total > limit:
-        over = total - limit
         print(f"{RED}{total:.1f}{RESET}")
     else:
         print(f"{total:.1f}")
