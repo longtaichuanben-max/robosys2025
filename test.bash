@@ -14,8 +14,9 @@ out=$(echo "林檎 100" | ./mkcon)
 
 out=$(echo apple 10000 | ./mkcon)
 [ "$?" = 0 ] || ng "$LINENO"
-RED="\033[31m"
-RESET="\033[0m"
+ESC=$(printf '\033')
+RED="${ESC}[31m"
+RESET="${ESC}[0m"
 [ "${out}" = "${RED}10000.0${RESET}" ] || ng "$LINENO"
 
 ### ENPTY INPUT ###
